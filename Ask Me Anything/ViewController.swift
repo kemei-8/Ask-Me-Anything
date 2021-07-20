@@ -25,7 +25,24 @@ class ViewController: UIViewController {
     
     func newBallImage() {
         randomBallNumber = Int.random(in: 0...5)
-        askBallImage.image = UIImage(named: ballArray[randomBallNumber])
+        
+        switch randomBallNumber {
+        case 0:
+            askBallImage.image = UIImage(named: ballArray[0])
+        case 1:
+            askBallImage.image = UIImage(named: ballArray[1])
+        case 2:
+            askBallImage.image = UIImage(named: ballArray[2])
+        case 3:
+            askBallImage.image = UIImage(named: ballArray[3])
+        case 4:
+            askBallImage.image = UIImage(named: ballArray[4])
+        case 5:
+            askBallImage.image = UIImage(named: ballArray[5])
+        default:
+            askBallImage.image = UIImage(named: ballArray[0])
+        }
+        
         
     }
     
